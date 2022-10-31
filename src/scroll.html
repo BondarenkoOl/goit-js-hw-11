@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 10</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="search-form-wrapper">
+      <ul class="list">
+        <li>
+          <a href="btn.html" class="link"
+            >Download with the button "Load more"</a
+          >
+        </li>
+        <li>
+          <a href="scroll.html" class="link corent-link">Scrolling images</a>
+        </li>
+      </ul>
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit">
+          <svg class="search-icon" width="15" height="15">
+            <use href="./images/search.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="gallery"></div>
+    <button type="button" class="load-more is-hidden">Load more</button>
+    <p class="gallery__text is-hidden">
+      We're sorry, but you've reached the end of search results.
+    </p>
+
+    <script src="./js/scroll.js" type="module"></script>
+  </body>
+</html>
